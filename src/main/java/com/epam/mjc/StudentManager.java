@@ -2,8 +2,13 @@ package com.epam.mjc;
 
 
 class MyException extends IllegalArgumentException {
-    MyException(long s) {
-        System.out.println("Could not find student with ID " + s);
+       MyException(long s) {
+        myEx(s);
+    }
+
+    public String myEx(long s){
+        String q = "Could not find student with ID " + s;
+        return q;
     }
 }
 
